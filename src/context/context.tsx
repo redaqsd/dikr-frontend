@@ -7,7 +7,7 @@ function DikrContextProvider ({children} : any){
 
     async function getData (){
         try {
-            const response = await axios.get("http://localhost:3000/api/v1/dikr")
+            const response = await axios.get("https://dikr-backend-4.vercel.app/api/v1/dikr")
             setData(response.data.dikr)
         } catch (error) {
             console.log(error)

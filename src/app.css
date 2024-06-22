@@ -1,0 +1,206 @@
+/* styles.css */
+
+/* Body and overall layout */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.home-section {
+    text-align: center;
+    width: 90%;
+    max-width: 800px; /* Increased max-width for wider layout */
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.app-name {
+    font-size: 2.5rem;
+    color: #333333; /* Dark gray */
+    margin-bottom: 20px;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    gap: 20px; /* Gap between grid items */
+    justify-items: center; /* Center items horizontally */
+}
+
+.dikr-button {
+    display: block;
+    text-decoration: none;
+    padding: 15px 0;
+    background-color: #007bff; /* Blue */
+    color: #ffffff; /* White text */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full width within grid item */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.dikr-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.category-name {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #ffffff; /* White text */
+
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .home-section {
+        width: 95%;
+    }
+    .app-name {
+        font-size: 2rem;
+    }
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr); /* Single column on smaller screens */
+    }
+    .category-name {
+        font-size: 1.2rem;
+    }
+}
+
+
+.dikr-section {
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+}
+
+.dikr-type {
+    font-size: 2rem;
+    color: #333333; /* Dark gray */
+    margin-bottom: 20px;
+}
+
+.single-dikr {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #007bff; /* Blue background */
+    color: #ffffff; /* White text */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.dikr-content {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.control-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.arrow {
+    font-size: 2rem;
+    color: #007bff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.arrow:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.current-dikr,
+.times,
+.current-times {
+    font-size: 1.2rem;
+    color: #333333; /* Dark gray */
+}
+
+.current-times {
+    background-color: #007bff; /* Blue */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.current-times:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.exit {
+    background-color: #007bff; /* Blue */
+    width: 100px;
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.exit:hover{
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+@media (max-width: 768px) {
+    .dikr-section {
+        width: 95%;
+    }
+
+    .dikr-type {
+        font-size: 1.5rem;
+    }
+
+    .single-dikr {
+        font-size: 1rem;
+    }
+
+    .arrow {
+        font-size: 1.5rem;
+    }
+
+    .options {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .current-dikr,
+    .times,
+    .current-times {
+        font-size: 1rem;
+    }
+
+    .current-times {
+        padding: 8px 12px;
+    }
+}

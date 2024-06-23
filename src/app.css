@@ -89,7 +89,6 @@ body {
 .dikr-type {
     font-size: 2rem;
     color: #333333; 
-    margin-bottom: 20px;
 }
 
 .single-dikr {
@@ -197,6 +196,10 @@ body {
 
     .categories-grid {
         grid-template-columns: repeat(3, 200px); 
+    }
+
+    .dikr-type {
+        margin-bottom: 10px;
     }
 
     .dikr-section {

@@ -70,6 +70,119 @@ body {
 
 }
 
+/*qsd*/
+
+.dikr-section {
+    width: 900px;
+    height: 500px;
+    padding: 20px;
+    background-color: #ffffff; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dikr-type {
+    font-size: 2rem;
+    color: #333333; 
+    margin-bottom: 20px;
+}
+
+.single-dikr {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #007bff; 
+    color: #ffffff; 
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dikr-content {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.control-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 90%;
+}
+
+.arrow {
+    font-size: 2rem;
+    color: #007bff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.arrow:hover {
+    color: #0056b3; 
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.current-dikr,
+.times,
+.current-times {
+    font-size: 1.2rem;
+    color: #333333; 
+}
+
+.current-times {
+    background-color: #007bff; 
+    color: #ffffff; 
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.current-times:hover {
+    background-color: #0056b3; 
+}
+
+.exit {
+    background-color: #007bff; 
+    width: 100px;
+    color: #ffffff; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 50px;
+    
+}
+
+.exit:hover{
+    background-color: #0056b3; 
+}
+
+@media (max-width: 920px) {
+    .dikr-section {
+        width: 800px;
+    }
+}
+
 
 @media (max-width: 840px) {
     .home-section {
@@ -84,6 +197,16 @@ body {
 
     .categories-grid {
         grid-template-columns: repeat(3, 200px); 
+    }
+
+    .dikr-section {
+        width: 700px;
+    }
+
+    .single-dikr {
+        margin: 0;
+        padding: 0 20px;
+        height: 180px;
     }
 }
 
@@ -101,6 +224,21 @@ body {
     .categories-grid {
         grid-template-columns: repeat(3, 150px); 
     }
+
+    .dikr-section {
+        width: 600px;
+    }
+}
+
+@media (max-width: 615px) {
+
+    .dikr-section {
+        width: 500px;
+    }
+
+    .dikr-content{
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 565px) {
@@ -109,6 +247,18 @@ body {
     }
     .categories-grid {
         grid-template-columns: repeat(3, 110px); 
+    }
+
+    .dikr-section {
+        width: 400px;
+    }
+    .dikr-content{
+        font-size: 15px;
+    }
+
+    .exit {
+        width: 70px;
+        font-size: 40px;
     }
 }
 
@@ -120,6 +270,26 @@ body {
     .categories-grid {
         grid-template-columns: repeat(2, 150px); 
     }
+
+    .dikr-type{
+        font-size: 23px;
+        padding: 5px;
+    }
+
+    .dikr-section {
+        width: 300px;
+    }
+
+    .single-dikr {
+        height: 250px;
+        width: 95%;
+    }
+
+    .current-times {
+        width: 35px;
+        height: 35px;
+    }
+    
 }
 
 @media (max-width: 365px) {
@@ -139,6 +309,29 @@ body {
         grid-template-columns: repeat(2, 100px);
         grid-gap: 10px;
     }
+
+    .dikr-section {
+        width: 250px;
+    }
+
+    .dikr-content {
+        font-size: 13px;
+    }
+
+    .dikr-type{
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .arrow{
+        font-size: 25px;
+    }
+
+    .current-times{
+        font-size: 1rem;
+        padding: 10px;
+        border-radius: 5px;
+    }
 }
 
 @media (max-width: 265px) {
@@ -155,130 +348,5 @@ body {
     }
 }
 
-.dikr-section {
-    width: 90%;
-    max-width: 600px;
-    padding: 20px;
-    background-color: #ffffff; /* White background */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    text-align: center;
-}
-
-.dikr-type {
-    font-size: 2rem;
-    color: #333333; /* Dark gray */
-    margin-bottom: 20px;
-}
-
-.single-dikr {
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #007bff; /* Blue background */
-    color: #ffffff; /* White text */
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
-
-.dikr-content {
-    font-size: 1.2rem;
-    margin: 0;
-}
-
-.control-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.arrow {
-    font-size: 2rem;
-    color: #007bff;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.arrow:hover {
-    color: #0056b3; /* Darker blue on hover */
-}
-
-.options {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.current-dikr,
-.times,
-.current-times {
-    font-size: 1.2rem;
-    color: #333333; /* Dark gray */
-}
-
-.current-times {
-    background-color: #007bff; /* Blue */
-    color: #ffffff; /* White text */
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.current-times:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-}
-
-.exit {
-    background-color: #007bff; /* Blue */
-    width: 100px;
-    color: #ffffff; /* White text */
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 20px;
-    font-size: 25px;
-}
-
-.exit:hover{
-    background-color: #0056b3; /* Darker blue on hover */
-}
 
 
-@media (max-width: 768px) {
-    .dikr-section {
-        width: 95%;
-    }
-
-    .dikr-type {
-        font-size: 1.5rem;
-    }
-
-    .single-dikr {
-        font-size: 1rem;
-    }
-
-    .arrow {
-        font-size: 1.5rem;
-    }
-
-    .options {
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
-    }
-
-    .current-dikr,
-    .times,
-    .current-times {
-        font-size: 1rem;
-    }
-
-    .current-times {
-        padding: 8px 12px;
-    }
-}

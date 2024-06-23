@@ -281,11 +281,16 @@ body {
 
     .dikr-section {
         width: 300px;
+        height: 600px;
     }
 
     .single-dikr {
-        height: 250px;
+        height: 350px;
         width: 95%;
+    }
+
+    .dikr-content{
+        font-size: 18px;
     }
 
     .current-times {
@@ -318,7 +323,7 @@ body {
     }
 
     .dikr-content {
-        font-size: 13px;
+        font-size: 16px;
     }
 
     .dikr-type{

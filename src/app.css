@@ -290,12 +290,16 @@ body {
     }
 
     .dikr-content{
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .current-times {
         width: 35px;
         height: 35px;
+    }
+
+    .current-dikr{
+        font-size: 20px;
     }
     
 }
